@@ -1,0 +1,685 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background-color: #000;
+}
+/* Elements in main page */
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/main/main-background.jpg") ;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+    
+}
+.main-title{
+   
+    color: white;
+    font-size: 100px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.7),
+    0 32px 64px -48px rgba(0, 0, 0, 0.8); 
+    
+    
+}
+
+.menu-title{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.menu-title h3{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu-btn{
+    display: flex;
+    flex-direction: row;
+}
+.menu-btn a{
+    color: rgb(192, 186, 186);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+
+/* CCS code for before div */
+    .pluton-before,
+    .neptun-before,
+    .uran-before,
+    .saturn-before,
+    .jupiter-before,
+    .mars-before,
+    .earth-before,
+    .wenus-before,
+    .mercury-before,
+    .sun-before{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .uran-before-title{
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 50px;
+    }
+    .mercury-before-title{
+        position: absolute;
+        top: 10%;
+        left: 84%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 50px;
+    }
+    .pluton-before-title,
+    .neptun-before-title,
+    .saturn-before-title,
+    .jupiter-before-title,
+    .mars-before-title,
+    .earth-before-title,
+    .wenus-before-title,
+    .sun-before-title{
+        position: absolute;
+        top: 15%;
+        left: 84%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 50px;
+    }
+    .uran-image-before img{
+        height: 70%;
+        width: 100%;
+    }
+    .earth-image-before img,
+    .mars-image-before img{
+        width: 100%;
+        height: 70%;
+        object-fit: contain;
+    }
+    .mercury-image-before img{
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+    
+    .wenus-image-before img{
+        height: 70%;
+        width: 70%;
+    }
+    .pluton-image-before img,
+    .neptun-image-before img,
+    .saturn-image-before img,
+    .jupiter-image-before img,
+    
+    .sun-image-before img{
+        width: 90%;
+        height: 85%;
+        
+    }
+    .uran-btn{
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50%,-50%);
+    }
+    .mercury-btn{
+        position: absolute;
+        top: 20%;
+        left: 84%;
+        transform: translate(-50%,-50%);
+    }
+    .pluton-btn,
+    .neptun-btn,
+    .saturn-btn,
+    .jupiter-btn,
+    .mars-btn,
+    .earth-btn,
+    .wenus-btn,
+    .sun-btn{
+        position: absolute;
+        top: 25%;
+        left: 84%;
+        transform: translate(-50%,-50%);
+    }
+    .pluton-btn a,
+    .neptun-btn a,
+    .uran-btn a,
+    .saturn-btn a,
+    .jupiter-btn a,
+    .mars-btn a,
+    .earth-btn a,
+    .wenus-btn a,
+    .mercury-btn a,
+    .sun-btn a{
+                
+        font-size: 27px;
+        color: rgb(174, 173, 173);
+        text-decoration: none;
+        
+        
+    }
+    .pluton-btn a:hover,
+    .naptun-btn a:hover,
+    .uran-btn a:hover,
+    .saturn-btn a:hover,
+    .jupiter-btn a:hover,
+    .mars-btn a:hover,
+    .earth-btn a:hover,
+    .wenus-btn a:hover,
+    .mercury-btn a:hover,
+    .sun-btn a:hover{
+        color: #fff;
+    }
+    .before-after-click{
+        display: none;
+    }
+    
+/* Elements in sun div */
+.list-sun-info{
+    display: none;
+    justify-content: flex-end;
+    background-color: #000;
+    height: 100%;
+    width: 100%; 
+    
+         
+    }
+.image-sun{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+.image-sun img{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}    
+    
+    
+
+    
+/* CSS code for main description */
+.description{
+    display: flex;
+    justify-content: end; 
+    align-items:flex-start;
+    flex-direction: column;
+    margin: 10px 30px;
+    padding: 10px 0;
+    width: 50%;
+}
+.title{
+   
+    display: flex; 
+    justify-content: flex-start;
+    color: #fff;
+    font-size: 30px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.9),
+    0 32px 64px -48px rgba(0, 0, 0, 0.9);
+}
+    
+
+
+.list-about{
+   display: flex;
+   justify-content: flex-start;
+   color: #fff;
+}
+   
+
+   
+.list-about li{
+    list-style: none;
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+.list-about span{
+    font-weight: 700;
+    margin-right:10px;
+    color: rgb(174, 173, 173);
+}
+.about{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.about span{
+    color: rgb(174, 173, 173);
+}
+.about p{
+    
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+/* Elements in mercury,wenus,earth, mars, jupiter, saturn, uran, neptun and pluton div */
+#pluton{
+    width: 100%;
+    height: 100%;
+    margin: 75px 0;
+}
+#neptun,
+#uran,
+#saturn,
+#jupiter,
+#mars,
+#earth,
+#wenus,
+#mercury,
+#sun{
+    
+    width: 100%;
+    height: 100%;
+    margin: 75px 0;
+    border-bottom: 4px solid #fff;
+}
+.list-pluton-info,
+.list-neptun-info,
+.list-uran-info,
+.list-saturn-info,
+.list-jupiter-info,
+.list-mars-info,
+.list-earth-info,
+.list-wenus-info,
+.list-mercury-info{
+    display: none;
+    justify-content: flex-end;
+    background-color: #000;
+    height: 100%;
+    width: 100%; 
+}
+
+.image-neptun,
+.image-uran,
+.image-saturn,
+.image-jupiter,
+.image-mars,
+.image-wenus,
+.image-mercury{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+.image-pluton img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+.image-neptun img,
+.image-uran img,
+.image-saturn img,
+.image-jupiter img,
+.image-mars img,
+.image-wenus img,
+.image-mercury img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.mercury-title{
+    color: white;
+    text-align: center;
+    
+}
+.info{
+    font-size: 10px;
+    color: #fff;
+    margin: 5px 5px;
+}
+footer p{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Elemenets in earth div */
+.image-earth{
+    margin-top: 37px;
+    margin-right: 40px;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+.image-earth img{
+    width: 53%;
+    animation: mymove 25s linear infinite;
+   
+}
+
+/* Animation for earth image */
+@keyframes mymove {
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg)}
+  }
+
+  /* CSS code for mobile */
+
+  @media (min-width:250px) and (max-width: 700px){
+   
+    .main-title{
+        font-size: 40px;
+    }
+    .model-link{
+        font-size: 20px;
+    }
+    .menu-title{
+        margin: 10px 0;
+    }
+    .menu-title h3{
+        font-size: 18px;
+    }
+    .menu-btn{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        margin: 0 10px;
+    }
+    .menu-btn a{
+        
+        font-size: 12px;
+        margin: 0 4px;
+    }
+    .wenus-before-title,
+    .mercury-before-title,
+    .sun-before-title{
+        position: absolute;
+        top: 3%;
+        left: 70%;
+        font-size:27px;
+    }
+    
+    .uran-before-title{
+        font-size: 27px;
+    }
+    
+    .sun-before-title{
+        position: absolute;
+        top: 2%;
+        left: 70%;
+        font-size: 27px;
+    }
+    .pluton-before-title,
+    .neptun-before-title,
+    .saturn-before-title,
+    .jupiter-before-title,
+    .mars-before-title,
+    .earth-before-title,
+    .wenus-before-title
+    {
+        position: absolute;
+        top: 13%;
+        left: 70%;
+        font-size: 27px;
+    }
+    .pluton-btn a,
+    .neptun-btn a,
+    .uran-btn a,
+    .saturn-btn a,
+    .jupiter-btn a,
+    .mars-btn a,
+    .earth-btn a,
+    .wenus-btn a,
+    .mercury-btn a,
+    .sun-btn a{
+        font-size: 13px;
+    }
+    .pluton-before,
+    .neptun-before,
+    .uran-before,
+    .saturn-before,
+    .jupiter-before,
+    .mars-before,
+    .earth-before,
+    .wenus-before,
+    .mercury-before,
+    .sun-before{
+        position: relative;
+        
+        height: 100%;
+    }
+    .sun-btn{
+        position: absolute;
+        top: 13%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+    }
+   
+    .pluton-btn,
+    .neptun-btn,
+    .saturn-btn,
+    .jupiter-btn,
+    .mars-btn,
+    .earth-btn,
+    .wenus-btn{
+        position: absolute;
+        top: 28%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+    }
+    .mercury-btn{
+        position: absolute;
+        top: 17%;
+        left: 70%;
+        color: #fff;
+        transform: translate(-50%,-50%);
+    }
+    .mercury-btn:hover{
+        color: #fff;
+    }
+    .image-wenus{
+        margin-left: 30px;
+
+    }
+    .image-earth{
+        margin-left: 30px;
+        width: 40%;
+
+    }
+    .image-neptun,
+    .image-uran,
+    .image-saturn,
+    .image-jupiter,
+    .image-mars,
+    .image-wenus,
+    .image-mercury,
+    .image-pluton{
+        width: 40%;
+    }
+    .image-pluton img{
+        height: 40%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .description{
+        display: flex;
+        justify-content: end; 
+        align-items:flex-start;
+        flex-direction: column;
+        margin: 10px 10px;
+        padding: 10px 0;
+        width: 70%;
+    }
+    .title{
+       
+        display: flex; 
+        justify-content: flex-start;
+        color: #fff;
+        margin: 5px 10px;
+        font-size: 20px;
+        box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.9),
+        0 32px 64px -48px rgba(0, 0, 0, 0.9);
+    }
+        
+    
+    
+    .list-about{
+       display: flex;
+       justify-content: flex-start;
+       color: #fff;
+    }
+       
+    
+       
+    .list-about li{
+        list-style: none;
+        font-size: 13px;
+        margin: 5px 10px;
+    
+    }
+    .list-about span{
+        font-size: 13px;
+        font-weight: 500;
+        margin-right:10px;
+        color: rgb(174, 173, 173);
+    }
+    .about{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .about span{
+        color: rgb(174, 173, 173);
+    }
+    .about p{
+        margin: 5px 10px;
+        color: #fff;
+        font-size: 13px;
+        
+        
+    }
+  }
+  @media (min-width:701px) and (max-width: 950px){
+    .main-title{
+        font-size: 60px;
+    }
+    .model-link{
+        font-size: 20px;
+    }
+    .menu-title{
+        margin: 10px 0;
+    }
+    .menu-title h3{
+        font-size: 20px;
+    }
+    .menu-btn{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        margin: 0 10px;
+    }
+    .menu-btn a{
+        
+        font-size: 18px;
+        margin: 0 4px;
+    }
+    .wenus-before-title,
+    .mercury-before-title,
+    .sun-before-title{
+        position: absolute;
+        top: 3%;
+        left: 75%;
+        font-size:35px;
+    }
+    
+    .uran-before-title{
+        font-size: 35px;
+    }
+    
+    .sun-before-title{
+        position: absolute;
+        top: 2%;
+        left: 70%;
+        font-size: 35px;
+    }
+    .pluton-before-title,
+    .neptun-before-title,
+    .saturn-before-title,
+    .jupiter-before-title,
+    .mars-before-title,
+    .earth-before-title,
+    .wenus-before-title
+    {
+        position: absolute;
+        top: 13%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        font-size: 32px;
+    }
+    .sun-btn{
+        position: absolute;
+        top: 13%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+    }
+   
+    .pluton-btn,
+    .neptun-btn,
+    .saturn-btn,
+    .jupiter-btn,
+    .mars-btn,
+    .earth-btn,
+    .wenus-btn{
+        position: absolute;
+        top: 28%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+    }
+    .mercury-btn{
+        position: absolute;
+        top: 17%;
+        left: 70%;
+        color: #fff;
+        transform: translate(-50%,-50%);
+    }
+    .pluton-btn a,
+    .neptun-btn a,
+    .uran-btn a,
+    .saturn-btn a,
+    .jupiter-btn a,
+    .mars-btn a,
+    .earth-btn a,
+    .wenus-btn a,
+    .mercury-btn a,
+    .sun-btn a{
+        font-size: 22px;
+
+    }
+  }
+  @media (min-width:951px) and (max-width: 1500px){
+    .pluton-btn a,
+    .neptun-btn a,
+    .uran-btn a,
+    .saturn-btn a,
+    .jupiter-btn a,
+    .mars-btn a,
+    .earth-btn a,
+    .wenus-btn a,
+    .mercury-btn a,
+    .sun-btn a{
+        font-size: 20px;
+
+    }
+  }
