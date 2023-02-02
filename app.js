@@ -92,30 +92,83 @@ plutonBtn.addEventListener('click', ()=>{
     afterPlutonDiv.style.display = 'flex';
 })
 
+// scroll animation
+window.addEventListener("scroll", () => {
+    // get elements div
+    let sunBtnDiv = document.querySelector('.sun-btn')
+    let mercuryBbtnDiv = document.querySelector('.mercury-btn')
+    let wenusBtnDiv = document.querySelector('.wenus-btn')
+    let earthBtnDiv = document.querySelector('.earth-btn')
+    let marsBtnDiv = document.querySelector('.mars-btn')
+    let jupiterBtnDiv = document.querySelector('.jupiter-btn')
+    let saturnBtnDiv = document.querySelector('.saturn-btn')
+    let uranBtnDiv = document.querySelector('.uran-btn')
+    let neptunBtnDiv = document.querySelector('.neptun-btn')
+    let plutonBtnDiv = document.querySelector('.pluton-btn')
+    
 
-// Scroll animated
-const sr = ScrollReveal({
-    origin: 'top',
-    // distance: '10px',
-    duration: 1500,
-    delay:400,
+
+   //set height elements 
+    let sunDivPosition = sunBtnDiv.getBoundingClientRect().top;
+    let mercuryDivPosition = mercuryBbtnDiv.getBoundingClientRect().top
+    let wenusDivPosition = wenusBtnDiv.getBoundingClientRect().top
+    let earthDivPosition = earthBtnDiv.getBoundingClientRect().top
+    let marsDivPosition = marsBtnDiv.getBoundingClientRect().top
+    let jupiterDivPosition = jupiterBtnDiv.getBoundingClientRect().top
+    let saturnDivPosition = saturnBtnDiv.getBoundingClientRect().top
+    let uranDivPosition = uranBtnDiv.getBoundingClientRect().top
+    let neptunDivPosition = neptunBtnDiv.getBoundingClientRect().top
+    let plutonDivPosition = plutonBtnDiv.getBoundingClientRect().top
+    
+    
+    let screenPosition = window.innerHeight /2 ;
+
+    if(sunDivPosition < screenPosition){
+        sunBtnDiv.classList.add('active')
+    if(mercuryDivPosition < screenPosition){
+        mercuryBbtnDiv.classList.add('active')
+    }
+    if(wenusDivPosition < screenPosition){
+        wenusBtnDiv.classList.add('active')
+    }
+    if(earthDivPosition < screenPosition){
+        earthBtnDiv.classList.add('active')
+    }
+    if(marsDivPosition < screenPosition){
+        marsBtnDiv.classList.add('active')
+    }
+    if(jupiterDivPosition < screenPosition){
+        jupiterBtnDiv.classList.add('active')
+    }
+    if(saturnDivPosition < screenPosition){
+        saturnBtnDiv.classList.add('active')
+    }
+    if(uranDivPosition < screenPosition){
+        uranBtnDiv.classList.add('active')
+    }
+    if(neptunDivPosition < screenPosition){
+        neptunBtnDiv.classList.add('active')
+    }
+    if(plutonDivPosition < screenPosition){
+        plutonBtnDiv.classList.add('active')
+    }
+    
+
+    }else{
+        sunBtnDiv.classList.remove('active')
+        mercuryBbtnDiv.classList.remove('active')
+        wenusBtnDiv.classList.remove('active')
+        earthBtnDiv.classList.remove('active')
+        marsBtnDiv.classList.remove('active')
+        jupiterBtnDiv.classList.remove('active')
+        saturnBtnDiv.classList.remove('active')
+        uranBtnDiv.classList.remove('active')
+        neptunBtnDiv.classList.remove('active')
+        plutonBtnDiv.classList.remove('active')
+        
+    }
+
 })
-
-sr.reveal('.main-title',{origin: 'top'},{duration:2000});
-sr.reveal('.model-link',{origin: 'top'},{duration:2000});
-sr.reveal('.menu',{origin: 'top'},{duration:2000});
-sr.reveal('.sun-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.mercury-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.wenus-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.earth-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.mars-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.jupiter-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.saturn-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.uran-btn',{origin: 'left'},{duration:2000});
-sr.reveal('.neptun-btn',{origin: 'right'},{duration:2000});
-sr.reveal('.pluton-btn',{origin: 'right'},{duration:2000});
-
-
 
 
 
