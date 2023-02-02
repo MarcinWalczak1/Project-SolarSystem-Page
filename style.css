@@ -20,6 +20,8 @@ body{
     background-size: 100%;
     
     
+    
+    
 }
 .main-title{
    
@@ -126,7 +128,9 @@ body{
     .neptun-image-before img,
     .saturn-image-before img,
     .jupiter-image-before img,
-    
+    .sun-image-before{
+        width: 70%;
+    }
     .sun-image-before img{
         width: 90%;
         height: 85%;
@@ -136,21 +140,25 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         position: absolute;
         top: 25%;
         left: 20%;
         transform: translate(-50%,-50%);
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        
     }
     .mercury-btn{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         position: absolute;
         top: 15%;
         left: 84%;
         transform: translate(-50%,-50%);
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        
     }
     .pluton-btn,
     .neptun-btn,
@@ -168,7 +176,13 @@ body{
         left: 84%;
         transform: translate(-50%,-50%);
         padding: 50px 0;
+        opacity: 0;
+        transition: all 1s ease-in-out;
 
+    }
+    .active{
+        opacity: 1;
+        /* transform: scale(1); */
     }
     .pluton-btn a,
     .neptun-btn a,
@@ -392,8 +406,255 @@ footer p{
   }
 
   /* CSS code for mobile */
+  @media (min-width:200px) and (max-width: 299px){
+   
+    .main-title{
+        font-size: 20px;
+    }
+    .model-link{
+        font-size: 12px;
+    }
+    .menu-title{
+        margin: 10px 0;
+    }
+    .menu-title h3{
+        font-size: 11px;
+    }
+    .menu-btn{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        margin: 0 10px;
+    }
+    .menu-btn a{
+        
+        font-size: 12px;
+        margin: 0 4px;
+    }
+    .wenus-before-title,
+    .mercury-before-title,
+    .sun-before-title{
+        
+        font-size:18px;
+    }
+    
+    .uran-before-title{
+        font-size: 18px;
+    }
+    
+    .sun-before-title{
+        
+        font-size: 18px;
+    }
+    .pluton-before-title,
+    .neptun-before-title,
+    .saturn-before-title,
+    .jupiter-before-title,
+    .mars-before-title,
+    .earth-before-title,
+    .wenus-before-title
+    {
+        
+        font-size: 15px;
+    }
+    .pluton-btn a,
+    .neptun-btn a,
+    .uran-btn a,
+    .saturn-btn a,
+    .jupiter-btn a,
+    .mars-btn a,
+    .earth-btn a,
+    .wenus-btn a,
+    .mercury-btn a,
+    .sun-btn a{
+        font-size: 7px;
+    }
+    .pluton-before,
+    .neptun-before,
+    .uran-before,
+    .saturn-before,
+    .jupiter-before,
+    .mars-before,
+    .earth-before,
+    .wenus-before,
+    .mercury-before,
+    .sun-before{
+        position: relative;
+        
+        height: 100%;
+    }
+    .uran-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        
+    }
+        
+    .mercury-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        position: absolute;
+        top: 5%;
+        left: 84%;
+        
+    }
+    .mars-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 8%;
+        left: 73%;
+        transform: translate(-50%,-50%);
 
-  @media (min-width:250px) and (max-width: 700px){
+    }
+    .saturn-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 22%;
+        left: 72%;
+
+    }
+    .pluton-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 22%;
+        left: 72%;
+    }
+    .neptun-btn,
+    .jupiter-btn,
+    .earth-btn,
+    .wenus-btn{
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 22%;
+            left: 74%;
+            
+        }
+            
+    
+        
+    .sun-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 22%;
+        left: 73%;
+        transform: translate(-50%,-50%);
+        
+
+    }
+    .mercury-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 10%;
+        left: 80%;
+        color: #fff;
+        transform: translate(-50%,-50%);
+    }
+    .mercury-btn:hover{
+        color: #fff;
+    }
+    .image-wenus{
+        margin-left: 30px;
+        width: 40%;
+
+    }
+    .image-earth{
+        margin-left: 30px;
+        width: 40%;
+
+    }
+    .image-neptun,
+    .image-uran,
+    .image-saturn,
+    .image-jupiter,
+    .image-mars,
+    .image-wenus,
+    .image-mercury,
+    .image-pluton{
+        width: 40%;
+    }
+    .image-pluton img{
+        height: 40%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .description{
+        display: flex;
+        /* justify-content: end;  */
+        align-items:flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 10px 10px;
+        padding: 10px 0;
+        width: 60%;
+    }
+    .title{
+       
+        display: flex; 
+        justify-content: flex-start;
+        color: #fff;
+        margin: 5px 10px;
+        font-size: 18px;
+        box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.9),
+        0 32px 64px -48px rgba(0, 0, 0, 0.9);
+    }
+        
+    
+    
+    .list-about{
+       display: flex;
+       justify-content: flex-start;
+       color: #fff;
+    }
+       
+    
+       
+    .list-about li{
+        list-style: none;
+        font-size: 10px;
+        margin: 5px 10px;
+    
+    }
+    .list-about span{
+        font-size: 10px;
+        font-weight: 500;
+        margin-right:10px;
+        color: rgb(174, 173, 173);
+    }
+    .about{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .about span{
+        color: rgb(174, 173, 173);
+    }
+    .about p{
+        margin: 5px 10px;
+        color: #fff;
+        font-size: 10px;
+        
+        
+    }
+  }
+  @media (min-width:300px) and (max-width: 700px){
    
     .main-title{
         font-size: 30px;
@@ -454,7 +715,7 @@ footer p{
     .wenus-btn a,
     .mercury-btn a,
     .sun-btn a{
-        font-size: 11px;
+        font-size: 10px;
     }
     .pluton-before,
     .neptun-before,
@@ -496,7 +757,7 @@ footer p{
         align-items: center;
         position: absolute;
         top: 8%;
-        left: 75%;
+        left: 73%;
         transform: translate(-50%,-50%);
 
     }
@@ -506,7 +767,7 @@ footer p{
         align-items: center;
         position: absolute;
         top: 22%;
-        left: 75%;
+        left: 72%;
 
     }
     .pluton-btn{
@@ -515,7 +776,7 @@ footer p{
         align-items: center;
         position: absolute;
         top: 22%;
-        left: 75%;
+        left: 72%;
     }
     .neptun-btn,
     .jupiter-btn,
@@ -539,7 +800,7 @@ footer p{
         align-items: center;
         position: absolute;
         top: 22%;
-        left: 75%;
+        left: 73%;
         transform: translate(-50%,-50%);
         
 
@@ -559,6 +820,7 @@ footer p{
     }
     .image-wenus{
         margin-left: 30px;
+        width: 40%;
 
     }
     .image-earth{
@@ -574,7 +836,7 @@ footer p{
     .image-wenus,
     .image-mercury,
     .image-pluton{
-        width: 100%;
+        width: 40%;
     }
     .image-pluton img{
         height: 40%;
@@ -583,12 +845,13 @@ footer p{
     }
     .description{
         display: flex;
-        justify-content: end; 
+        /* justify-content: end;  */
         align-items:flex-start;
+        flex-wrap: wrap;
         flex-direction: column;
         margin: 10px 10px;
         padding: 10px 0;
-        width: 70%;
+        width: 60%;
     }
     .title{
        
@@ -775,7 +1038,7 @@ footer p{
     .wenus-btn a,
     .mercury-btn a,
     .sun-btn a{
-        font-size: 20px;
+        font-size: 18px;
 
     }
   }
