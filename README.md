@@ -12,11 +12,11 @@ The website contains sections that are operated by convenient navigation.
 
 A few photos from the website:
 
-![image](https://user-images.githubusercontent.com/105975068/213431816-90cc8019-82bb-44dc-a605-39b55c3790d5.png)
+![image](https://user-images.githubusercontent.com/105975068/216294618-09663d99-0268-431b-811b-7ee55761aa60.png)
 
-![image](https://user-images.githubusercontent.com/105975068/213431870-1b7d631d-343d-4aad-b251-d4678fe63103.png)
+![image](https://user-images.githubusercontent.com/105975068/216294696-71ea2005-4969-4055-af10-7be2da185feb.png)
 
-![image](https://user-images.githubusercontent.com/105975068/213432009-d13a2d1f-12b0-4c84-955a-127ac21ea00e.png)
+![image](https://user-images.githubusercontent.com/105975068/216294819-87858ece-4f8b-48e9-ba9b-b5632ab6b413.png)
  
  The website also have a friendly scroll animation.
  
